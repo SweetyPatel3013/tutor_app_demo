@@ -1,0 +1,50 @@
+<div class="background">
+  <div class="login-container">
+    <div class="text-container">
+      <h1>Hey Stranger</h1>
+      <p>
+        Want to create an awesome account to access this awesome app? Go ahead
+        and click the button below!
+      </p>
+      <button mat-button (click)="loginWithGoogle()">Google Sign IN</button>
+    </div>
+    <div class="form-container">
+      <h1>Welcome to Tutor App</h1>
+      <h5>Sign in with your email</h5>
+      <div class=" content">
+        <div class=" row">
+          <div class=" col-md-8">
+            <div class=" card">
+              <div class=" card-header"><h5 class=" title">Login</h5></div>
+              <div class=" card-body">
+                <form class="form" [formGroup]="loginForm" (ngSubmit)="login()">
+                  <div class=" row">
+                    <div class=" col-md-6 pr-md-1">
+                      <div class=" form-group">
+                        <mat-label> Email </mat-label>
+                        <input class= "form-control" formControlName="email" placeholder="Email" type="email" required matInput/>
+                      </div>
+                    </div>
+                    <div class=" col-md-6 pl-md-1">
+                      <div class=" form-group">
+                        <mat-label> Password </mat-label>
+                        <input class= "form-control" formControlName="password" placeholder="Password" type="password" required matInput/>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class=" card-footer">
+                      <button class="btn btn-success animation-on-hover" [disabled]="loginForm.invalid" type="submit">Login</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

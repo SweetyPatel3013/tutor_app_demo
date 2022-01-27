@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.mat-date-range-input-container {
+  @apply h-full pl-3
+}
+
+.mat-date-range-input-start-wrapper,
+.mat-date-range-input-end-wrapper {
+  @apply flex items-center
+}
+
+.mat-field-sm {
+  //.mat-form-field-wrapper {
+  //  margin: 0 !important;
+  //  padding-bottom: 0;
+  //}
+
+  //&.mat-form-field-appearance-outline .mat-form-field-infix {
+  //  padding: 0.6em 0 0.72em 0 !important;
+  //}
+}
+
+//@import "~@swimlane/ngx-datatable/themes/material.scss";
+//@import "~@swimlane/ngx-datatable/assets/icons.css";
+//
+//@import "global-style/main";
+
+.mat-form-field {
+  width: 100%;
+}
+
+/* form card */
+.mat-radio-button ~ .mat-radio-button {
+  margin-left: 16px;
+}
+
+// for mat tooptip
+.mat-tooltip {
+  padding: 6px 10px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+  background-color: var(--primary-color);
+}
+
+
+/* matirial spiner */
+.mat-spinner-white circle {
+  stroke: white;
+}
+
+
+.ajax-loader {
+  position: absolute !important;
+  right: 30px;
+  top: 8px;
+}
+
+.mat-input-button {
+  height: calc(100% - 26px);
+  margin-top: .25em !important;
+}
+
+.progress-linear {
+  position: fixed !important;
+  bottom: 0;
+}
+
+.mat-drawer-container {
+  height: calc(100vh - 60px);
+  background-color: transparent;
+}
+
+.search-list em {
+  color: #448aff;
+  font-weight: 700;
+  font-style: normal;
+}
+
+svg-icon {
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+.cdk-overlay-container {
+  z-index: 1000001 !important;
+}
+
+.mat-calendar-body-cell:hover > .mat-calendar-body-cell-content {
+  color: #fff;
+}
+
+.mat-calendar-body-in-range .mat-calendar-body-cell-content {
+  color: #fff;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -100px;
+  }
+  40%,
+  100% {
+    background-position: 270px;
+  }
+}
+
+
+/* Stock status */
+.status {
+  border-radius: 3px;
+  padding: 5px 8px;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.out-stock {
+  background-color: rgba(231, 76, 60, 0.22);
+  color: #e74c3c;
+}
+
+.in-stock {
+  background-color: rgba(39, 174, 96, 0.18);
+  color: #27ae60;
+}
